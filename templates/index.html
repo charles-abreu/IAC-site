@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <style type="text/css">
+    .capa{
+      background-image:url({{url_for('static', filename="img/capa.png")}});
+      background-size: cover;
+      background-repeat:no-repeat;
+      background: contain;
+    }
+  </style>
+
+  <div class="jumbotron jumbotron-fluid shadow bg-dark capa">
+    <div class="container py-5">
+      <div class="row" >
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bold text-light">Inteligência Artificial e Computacional</h1>
+          <h5 class="col-md-8 fs-4 text-light mb-3">Inscrições até 20/07/2021 </h5>
+          <a class="button button-1 button-1a" id=info  type="button" href="https://portalead.cead.ufv.br/site/curso/pos-graduacao-latto-sensu-em-inteligencia-artificial-e-computacional/">Inscreva-se</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container marketing mt-5" >
+      <!-- START THE FEATURETTES -->
+      <div class="row featurette" >
+        <div class="col-md-7">
+          <h2 class="featurette-heading text-dark">Inteligência Artificial (IA)</h2>
+          <p class="lead">A Inteligência Artificial (IA) e Computacional, uma das
+            ferramentas indispensáveis às transformações tecnológicas do mundo,
+            será tema de um curso de pós-graduação lato sensu desenvolvido pela Cead,
+            totalmente na modalidade a distância. </p>
+        </div>
+        <div class="col-md-5 ">
+          <div class="row justify-content-center">
+            <img src="{{url_for('static', filename='img/logo.png')}}" alt="" style="height:250px;">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider ">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading text-dark">Sobre o curso</h2>
+          <p class="lead">Elaborado por professores da UFV envolvidos em pesquisas
+            nesta área, o curso visa promover a especialização científica e
+            tecnológica relativas ao desenvolvimento de projetos práticos de
+            inteligência artificial. Seu público potencial é de graduados em
+            ciências exatas, agrárias, biológicas e sociais, mas é planejado para
+            atender tanto a iniciantes quanto a profissionais experientes,
+             em busca de atualização na área. </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <div class="row justify-content-center">
+            <img src="{{url_for('static', filename='img/course.png')}}" alt="" style="height:300px;">
+          </div>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider my-5">
+
+      <div class="row featurette ">
+        <div class="col-md-7">
+          <h2 class="featurette-heading text-dark">Informações adcionais</h2>
+          <p class="lead"> A pós-graduação, que oferece 100 vagas, tem carga horária
+            de 420 horas e será realizada de <span class="font-weight-bolder">
+            9 de agosto deste ano a 15 de junho de 2022.</span>
+            As inscrições devem ser realizadas <span class="font-weight-bolder"> até 20 de julho </span>,
+            na <a href="https://portalead.cead.ufv.br/site/curso/pos-graduacao-latto-sensu-em-inteligencia-artificial-e-computacional/">página do curso</a>, na qual estão disponíveis outras informações.
+            Mais detalhes podem ser obtidos pelo e-mail <span class="font-weight-bolder">pos_ia@ufv.br</span>
+            , pelo telefone <span class="font-weight-bolder">(31) 3612-6400</span>,
+            e ainda pelo WhatsApp (31) 98932 5473. </p>
+        </div>
+        <div class="col-md-5">
+          <div class="row justify-content-center">
+            <img src="{{url_for('static', filename='img/info.png')}}" alt="" style="height:250px;">
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider my-5">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading text-dark">Sobre a UFV</h2>
+          <p class="lead">A Universidade Federal de Viçosa (UFV) é uma das mais
+            antigas instituições de ensino superior do Brasil e possui excelência
+            no ensino, na pesquisa e na extensão das ciências Biológicas, Exatas
+            e Humanas. Em seus cursos oferecidos estão matriculados mais de 20 mail
+            estudantes. Frequentemente, a Universidade Federal de Viçosa é destaque
+            em rankings educacionais do país e do mundo. </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="{{url_for('static', filename='img/ufv.png')}}" alt="" style="width:100%;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+{% endblock %}
